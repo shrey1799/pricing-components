@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+
+<body>
+
+    <header>
+        <p class="heading"> Our Pricing </p>
+        <div class="buttonContainer">
+            <p> Annually</p>
+            <div class="slidebar">
+                <div class="dot">
+
+                </div>
+            </div>
+            <p> Monthly </p>
+        </div>
+    </header>
+    <main>
+
+        <div class="Card sideCard">
+            <p> Basic</p>
+            <!-- p1 is used to target its text-content from index.js -->
+            <p class="price p1"> <span class="dollar"> &dollar; </span>199.99</p>
+            <hr>
+            <p> 500 GB Storage</p>
+            <hr>
+            <p> 2 Users Allowed</p>
+            <hr>
+            <p> Send up to 3 GB</p>
+            <hr>
+            <button class="sideButton buttonStyling">LEARN MORE</button>
+        </div>
+
+        <div class="Card centerCard">
+            <p> Professional</p>
+            <!-- p2 is used to target its text-content from index.js -->
+            <p class="price p2"> <span class="dollar"> &dollar;</span>249.99</p>
+            <hr>
+            <p> 1 TB Storage</p>
+            <hr>
+            <p> 5 Users Allowed</p>
+            <hr>
+            <p> Send up to 10 GB</p>
+            <hr>
+            <button class="centerButton buttonStyling">LEARN MORE</button>
+        </div>
+
+        <div class="Card sideCard">
+            <p> Master</p>
+            <!-- p3 is used to target its text-content from index.js -->
+            <p class="price p3"> <span class="dollar"> &dollar;</span>399.99</p>
+            <hr>
+            <p> 2 TB Storage </p>
+            <hr>
+            <p> 10 Users Allowed</p>
+            <hr>
+            <p> Send up to 20 GB</p>
+            <hr>
+            <button class="sideButton buttonStyling">LEARN MORE</button>
+        </div>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

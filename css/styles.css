@@ -1,0 +1,161 @@
+/*                     1st part               */
+
+body {
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+    background-image: url("../images/bg-top.svg"), url(../images/bg-bottom.svg);
+    background-position: 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 2rem;
+    color: hsl(233, 13%, 49%);
+}
+
+.slidebar {
+    position: relative;
+    cursor: pointer;
+    margin: auto 25px;
+    border-radius: 25px;
+    height: 30px;
+    width: 55px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.dot {
+    position: absolute;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+    top: 2px;
+    left: 5px;
+    background-color: #fff;
+}
+
+.buttonContainer {
+    font-size: 15px;
+    color: hsl(234, 14%, 74%);
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*                      2nd part                   */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card {
+    margin: 5% 0;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+}
+
+.sideCard>hr {
+    background-color: hsl(233, 13%, 49%);
+}
+
+.centerCard>hr {
+    background-color: #fff;
+}
+
+.centerCard>p:nth-child(1) {
+    margin-top: 20px;
+}
+
+.sideCard {
+    width: 260px;
+    height: 355px;
+    color: hsl(233, 13%, 49%);
+    background-color: #fff;
+    padding: 3% 5%;
+    border-radius: 10px;
+}
+
+.centerCard {
+    width: 260px;
+    height: 370px;
+    color: #fff;
+    padding: 5%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%) 60%, hsl(237, 63%, 64%));
+}
+
+.sideCard>.price {
+    color: hsl(232, 13%, 33%);
+}
+
+.price {
+    margin: 0;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.dollar{
+    font-size: 2.5rem;
+    margin-right: 3px;
+}
+
+.buttonStyling {
+    letter-spacing: 3px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.sideButton {
+    color: #fff;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%) 60%, hsl(237, 63%, 64%));
+}
+
+.centerButton {
+    color: hsl(237, 63%, 64%);
+    background-color: #fff;
+}
+
+.sideButton:hover {
+    color: hsl(237, 63%, 64%);
+    background-color: #fff;
+    background-image: none;
+    border: 0.5px solid hsl(237, 63%, 64%);
+}
+
+.centerButton:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%) 60%, hsl(237, 63%, 64%));
+    border: 0.5px solid #fff;
+}
+
+@media (max-width:1200px) {
+    main {
+        flex-direction: column;
+    }
+    .sideCard {
+        width: 290px;
+    }
+    .centerCard {
+        width: 290px;
+        height: 355px;
+    }
+}
